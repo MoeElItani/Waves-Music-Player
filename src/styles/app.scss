@@ -1,0 +1,51 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+   scrollbar-width: thin;
+   scrollbar-color: rgb(155, 155, 155, 0.5) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+   width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+   background: #f0f0f0;
+}
+
+*::-webkit-scrollbar-thumb {
+   background-color: rgb(155, 155, 155);
+   border-radius: 15px;
+   border: none;
+}
+
+h1,
+h2,
+h3 {
+   color: rgb(55, 55, 55);
+}
+body {
+   font-family: 'Lato', sans-serif;
+}
+h3,
+h4 {
+   font-weight: 400;
+   color: rgb(100, 100, 100);
+}
+.App{
+   transition: all 0.5s ease;
+}
+.library-active{
+   margin-left: 12%;
+}
+@import './Song';
+@import './Library';
+@import './Player';
+@import './Nav';
